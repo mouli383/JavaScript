@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:hsl(0,0%,90%);
+}
+
+#myH1{
+    font-size:4rem;
+    font-family:'Courier New', Courier, monospace
+}
+
+#container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    font-size:3rem;
+    border:5px solid;
+    padding:20px;
+    border-radius:5px;
+    background-color:white;
+    font-family:monospace;
+    text-shadow:2px 2px 2px hsl(0,0%,0%,0.75);
+}
+
+#startbtn{
+    padding:10px;
+    width:80px;
+    color:white;
+    background-color:red;
+    border:none;
+    border-radius:4px;
+    font-weight:bold;
+    font-size:20px;
+    cursor:pointer;
+}
+
+#stopbtn{
+    padding:10px;
+    width:80px;
+    border:none;
+    color:white;
+    background-color:green;
+    font-weight:bold;
+    font-size:20px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+#resetbtn{
+    color:white;
+    background-color:orange;
+    width:80px;
+    border:none;
+    border-radius:4px;
+    font-weight:bold;
+    padding:10px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+#startbtn:hover{
+    background-color:rgb(157, 7, 7);
+}
+
+#stopbtn:hover{
+    background-color:rgb(3, 174, 3);
+}
+
+#resetbtn:hover{
+    background-color:rgb(158, 104, 4);
+}

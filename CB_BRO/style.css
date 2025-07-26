@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    /* text-align:center; */
+    height:1000vh;
+}
+
+#countable{
+    text-align:center;
+    font-weight:900;
+    font-size:10em;
+    display:block;
+}
+
+.buttonContainer{
+   /* display:flex;
+   flex-direction:row;
+   justify-content:space-between; */
+   text-align: center;
+}
+
+.buttons{
+    padding:10px 20px;
+    background-color:rgb(11, 182, 238);
+    color:white;
+    font-weight:bold;
+    border-radius:4px;
+    border:none;
+    font-size:1.5em;
+}
+
+.buttons:hover{
+    color:rgb(11,182,238);
+    background-color:white;
+    border:2px solid rgb(11,182,238);
+    border-radius:4px;
+    box-shadow:2px 2px 2px gray;
+}
+
+#myButton{
+    font-weight:bold;
+    font-size:24px;
+   margin-left:50%;
+   background-color:green;
+   color:white;
+   border-radius:5px;
+   border:none;
+   padding:10px;
+}
+
+#myButton:hover{
+    color:green;
+    background-color:white;
+    box-shadow:2px 2px 2px green;
+    border:2px solid green;
+}
+
+#myLabel{
+    font-size:3em;
+    /* text-align:center; */
+    margin-left:50%;
+}
+
+#myButton1{
+    background-color:red;
+    color:white;
+    padding:5px;
+    border-radius:5px;
+    border:none;
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:10px;
+    margin-left:5px;
+}
+
+#myButton1:hover{
+    color:red;
+    background-color:white;
+    border:2px solid red;
+    box-shadow:inset -3px 3px 3px yellow;
+}
+
+#myButton2{
+    font-size:20px;
+    font-weight:bold;
+    padding:5px;
+    background-color:purple;
+    color:white;
+    border:none;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+
+#myButton2:hover{
+    background-color:white;
+    color:purple;
+    box-shadow:2px 2px 2px purple;
+    border:2px solid purple;
+}
+
+.container{
+    width:300px;
+    height:300px;
+    background-color:white;
+    border-radius:5px;
+    border:2px solid gray;
+    margin-left:40%;
+    margin-bottom:10%;
+}
+
+#temperature{
+    color:rgb(9, 128, 226);
+    font-weight:900;
+    font-size:20px;
+    position:relative;
+}
+
+#num{
+    margin-top:20px;
+    margin-left:20%;
+    height:50px;
+    font-weight:bold;
+    font-size:16px;
+    text-align:center;
+}
+
+#p1{
+    text-align:center;
+    margin-top:15px;
+}
+
+#sub{
+    font-weight:bold;
+    background-color:red;
+    color:white;
+    border-radius:5px;
+    font-size:14px;
+    height:20px;
+    width:70px;
+    text-align:center;
+    border:none;
+    margin-left:38%;
+    margin-top:5%;
+}
+
+#result{
+    margin-left:43%;
+    font-size:16px;
+    font-weight:bold;
+    margin-top:5%;
+}
+
+#contain{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.roll{
+    font-weight:bold;
+    background-color:rgb(28, 180, 230);
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:1px;
+    cursor:pointer;
+}
+
+.roll:hover{
+    background-color:rgb(255, 255, 255);
+    color:rgb(28, 180, 230);
+    box-shadow:inset 2px 2px 2px rgb(28, 180, 230);
+}
+
+.roll:active{
+    background-color:rgb(28, 180, 230);
+    color:white;
+}
+
+.box{
+    border:3px solid black;
+    width:100%;
+    height:125px;
+}
+
+#fruits{
+    font-size:2rem;
+    border:3px solid;
+    margin-top:5px;
+}
+
+#mybox{
+    width:300px;
+    height:300px;
+    background-color:rgb(4, 243, 4);
+    border:2px solid;
+    margin-top:5px;
+    font-weight:bold;
+    font-size:4.5rem;
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+
+#clickme{
+    font-size:3rem;
+}
+
+#boxx{
+    background-color:lightblue;
+    width:200px;
+    height:200px;
+    font-size:7.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+#hide{
+    font-size:2rem;
+}
+
+#myimg{
+    height:300px;
+    width:300px;
+}
+
+.mybuttons{
+    font-size:4rem;
+    margin-bottom:10px;
+    background-color:rgb(24, 188, 233)
+}
+
+#mybtn{
+    font-size:4.3em;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+    padding: 10px 15px;
+}
+
+.enabled{
+    background-color:rgb(10, 183, 196);
+    color:white;
+}
+
+.hover{
+    box-shadow:0 0 10px tomato;
+    font-weight:bold;
+}
+
+.disabled{
+    background-color:gray;
+    color:white;
+}
+
+.btns{
+    font-size:4rem;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+    padding:10px 15px;
+}
