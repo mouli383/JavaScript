@@ -13,7 +13,7 @@
 
 // document.getElementById("myP").textContent='I like Pizza';
 
-/*// variable:Acontainer that stores a value behaves as if it were the value it contains
+/*// variable:Acontainer that stores a value behaves as if it were the value it contains  
 
 // declartion let x;
 // assignment x=16;*/
