@@ -82,7 +82,7 @@
 
 // //How to accept user Input
 
-// // Window promp
+// // Window prompt
 
 // username=window.prompt("What is your Name?")
 
@@ -788,7 +788,7 @@
 // }
 
 // function capitalize(element,index,array){
-//     array[index]=element.charAt(0).toUpperCase()+element.slice(1);
+//     array[index]=element.charAt(0).toUpperCase()+element.slice(1).toLowerCase();
 // }
 
 // fruits.forEach(upper);
@@ -1698,7 +1698,7 @@ function hello(){
 // document.body.insertBefore(newH1,box2);
 
 // const boxes=document.querySelectorAll(".box");
-// document.body.insertBefore(newH1,boxes[3]);
+// document.body.insertBefore(newH1,boxes[1]);
 
 // //remove html element
 // // document.body.removeChild(newH1);
@@ -1754,11 +1754,11 @@ function hello(){
 
 // const clickme=document.getElementById("clickme");
 
-// // clickme.addEventListener('');
+// clickme.addEventListener('');
 
 //eventListener =Listen for specific events to create interactive webpages 
 //events:keydown,keyup
-//document.addEventListener(event,callback)
+// document.addEventListener(event,callback)
 
 document.addEventListener("keydown",event=>{
     console.log(`key down: ${event.key}`);
@@ -1770,57 +1770,57 @@ document.addEventListener('keyup',event=>{
 
 const boxx=document.getElementById("boxx");
 
-// document.addEventListener('keydown',event=>{
-//     boxx.textContent='😆';
-//     boxx.style.backgroundColor="tomato";
-// });
+document.addEventListener('keydown',event=>{
+    boxx.textContent='😆';
+    boxx.style.backgroundColor="tomato";
+});
 
-// document.addEventListener('keyup',event=>{
-//     boxx.textContent=`🐍`;
-//     boxx.style.backgroundColor='lightblue';
-// })
+document.addEventListener('keyup',event=>{
+    boxx.textContent=`🐍`;
+    boxx.style.backgroundColor='lightblue';
+})
 
-// let movement=10;
-// let x=0;
-// let y=0;
+let movement=10;
+let x=0;
+let y=0;
 
-// document.addEventListener('keydown',event=>{
-//     if(event.key.startsWith("Arrow")){
-//         switch (event.key){
-//             case "ArrowUp":
-//                 y-=movement;
-//                 break;
-//             case "ArrowDown":
-//                 y+=movement;
-//                 break;
-//             case "ArrowLeft":
-//                 x-=movement;
-//                 break;
-//             case "ArrowRight":
-//                 x+=movement;
-//                 break;
-//         }
+document.addEventListener('keydown',event=>{
+    if(event.key.startsWith("Arrow")){
+        switch (event.key){
+            case "ArrowUp":
+                y-=movement;
+                break;
+            case "ArrowDown":
+                y+=movement;
+                break;
+            case "ArrowLeft":
+                x-=movement;
+                break;
+            case "ArrowRight":
+                x+=movement;
+                break;
+        }
 
-//         boxx.style.top=`${y}px`;
-//         boxx.style.top=`${x}px`;
+        boxx.style.top=`${y}px`;
+        boxx.style.top=`${x}px`;
       
-//     }
-// });
+    }
+});
 
-// const hide=document.getElementById("hide");
-// const myimg=document.getElementById("myimg");
+const hide=document.getElementById("hide");
+const myimg=document.getElementById("myimg");
 
-//hide.addEventListener("click",event=>{
-//     if(myimg.style.display==="none"){
-//         myimg.style.display="block";
-//         hide.textContent="Hide";
-//     }
-//     else{
-//          myimg.style.display="none";
-//          hide.textContent="Show";
-//     }
+hide.addEventListener("click",event=>{
+    if(myimg.style.display==="none"){
+        myimg.style.display="block";
+        hide.textContent="Hide";
+    }
+    else{
+         myimg.style.display="none";
+         hide.textContent="Show";
+    }
    
-// });
+});
 
 // hide.addEventListener("click",event=>{
 //     if(myimg.style.visibility==="hidden"){
@@ -1839,104 +1839,104 @@ const boxx=document.getElementById("boxx");
 
 let mybuttons=document.querySelectorAll(".mybuttons");
 
-// mybuttons.forEach(element=>{
-//     element.style.backgroundColor="green";
-//     element.textContent+=`💖`;
-// });
+mybuttons.forEach(element=>{
+    element.style.backgroundColor="green";
+    element.textContent+=`💖`;
+});
 
-// mybuttons.forEach(element=>{
-//     element.addEventListener("click",event=>{
-//         event.target.style.backgroundColor="tomato";
-//     })
-// });
+mybuttons.forEach(element=>{
+    element.addEventListener("click",event=>{
+        event.target.style.backgroundColor="tomato";
+    })
+});
 
-// mybuttons.forEach(element=>{
-//     element.addEventListener("mouseover",event=>{
-//         event.target.style.backgroundColor="blue";
-//     });
-// });
+mybuttons.forEach(element=>{
+    element.addEventListener("mouseover",event=>{
+        event.target.style.backgroundColor="blue";
+    });
+});
 
-// mybuttons.forEach(element=>{
-//     element.addEventListener("mouseout",event=>{
-//         event.target.style.backgroundColor="lightblue";
-//     });
-// });
+mybuttons.forEach(element=>{
+    element.addEventListener("mouseout",event=>{
+        event.target.style.backgroundColor="lightblue";
+    });
+});
 
-// const newButton=document.createElement("button")
+const newButton=document.createElement("button")
 
-// newButton.textContent=`Button5`;
-// newButton.classList="mybuttons";
-// document.body.appendChild(newButton);
+newButton.textContent=`Button5`;
+newButton.classList="mybuttons"; 
+document.body.appendChild(newButton);
 
-// console.log(mybuttons);
+console.log(mybuttons);
 
-// mybuttons=document.querySelectorAll(".mybuttons");
+mybuttons=document.querySelectorAll(".mybuttons");
 
-// console.log(mybuttons);
+console.log(mybuttons);
 
-// mybuttons.forEach(element=>{
-//     element.addEventListener("click",event=>{
-//         event.target.remove();
-//         mybuttons=document.querySelectorAll(".mybuttons");
-//         console.log(mybuttons);
-//     });
-// });
+mybuttons.forEach(element=>{
+    element.addEventListener("click",event=>{
+        event.target.remove();
+        mybuttons=document.querySelectorAll(".mybuttons");
+        console.log(mybuttons);
+    });
+});
 
 //classlists
 
-// const mybutton=document.getElementById("mybtn");
+const mybutton=document.getElementById("mybtn");
 
-// mybutton.classList.add("enabled");
+mybutton.classList.add("enabled");
 
-// mybutton.classList.remove("enabled");
+mybutton.classList.remove("enabled");
 
-// mybutton.addEventListener("mouseover",event=>{
-//     event.target.classList.toggle("hover");
-// });
+mybutton.addEventListener("mouseover",event=>{
+    event.target.classList.toggle("hover");
+});
 
-// mybutton.addEventListener("mouseout",event=>{
-//     event.target.classList.toggle("hover");
-// });
+mybutton.addEventListener("mouseout",event=>{
+    event.target.classList.toggle("hover");
+});
 
-// mybutton.classList.add("enabled");
+mybutton.classList.add("enabled");
 
-// mybutton.addEventListener("click",event=>{
+mybutton.addEventListener("click",event=>{
 
-//     if(event.target.classList.contains("disabled")){
-//         event.target.textContent+=`🤷‍♀️`;
-//     }
-//     else{
-//         event.target.classList.replace("enabled","disapled");
-//     }
-// });
+    if(event.target.classList.contains("disabled")){
+        event.target.textContent+=`🤷‍♀️`;
+    }
+    else{
+        event.target.classList.replace("enabled","disabled");
+    }
+});
 
-// let btns=document.querySelectorAll(".btns");
+let btns=document.querySelectorAll(".btns");
 
-// btns.forEach(element=>{
-//     element.classList.add("enabled");
-// });
+btns.forEach(element=>{
+    element.classList.add("enabled");
+});
 
-// btns.forEach(element=>{
-//     element.classList.remove("")
-// })
+btns.forEach(element=>{
+    element.classList.remove("")
+})
 
-// btns.forEach(button=>{
-//     button.addEventListener("mouseover",event=>{
-//         event.target.classList.toggle("hover");
-//     })
-// })
+btns.forEach(button=>{
+    button.addEventListener("mouseover",event=>{
+        event.target.classList.toggle("hover");
+    })
+})
 
-// btns.forEach(button=>{
-//     button.addEventListener("mouseout",event=>{
-//         event.target.classList.toggle("hover");
-//     })
-// })
+btns.forEach(button=>{
+    button.addEventListener("mouseout",event=>{
+        event.target.classList.toggle("hover");
+    })
+})
 
-// btns.forEach(button=>{
-//     button.addEventListener("click",event=>{
-//         event.target.classList.replace("enabled","disabled");
-//     })
-// })'
+btns.forEach(button=>{
+    button.addEventListener("click",event=>{
+        event.target.classList.replace("enabled","disabled");
+    })
+})
 
 
 //promise= An object that manages synchronus operations. wrap a promise object around(asynchronous code) "I promise to return a value " pending-> RESOLVED or REJECTED
@@ -1948,43 +1948,43 @@ let mybuttons=document.querySelectorAll(".mybuttons");
 //2.CLEAN THE KITCHEN
 //3. TAKE OUT THE TRASH
 
-function walkDog(){
+// function walkDog(){
     // return new Promise((resolve,reject)=>{
     //     setTimeout(()=>{
     //     resolve("You walk the dog");
     // },1500);
     // });
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            let isWalked=true;
-            if(isWalked){
-                 resolve("You walk the dog");
-            }
-            else{
-                reject("How dare you, you didn't even walk the dog");
-            }
+    // return new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         let isWalked=true;
+    //         if(isWalked){
+    //              resolve("You walk the dog");
+    //         }
+    //         else{
+    //             reject("How dare you, you didn't even walk the dog");
+    //         }
        
-    },1500);
-    });
-}
+    // },1500);
+    // });
+// }
 
-function cleanKitchen(){
-    return new Promise((resolve,reject)=>{
-           setTimeout(()=>{
-        resolve("You clean the kitchen");
+// function cleanKitchen(){
+//     return new Promise((resolve,reject)=>{
+//            setTimeout(()=>{
+//         resolve("You clean the kitchen");
        
-    },2500);
-    });
-}
+//     },2500);
+//     });
+// }
 
-function takeOutTrash(){
-    return new Promise((resolve,reject)=>{
-         setTimeout(()=>{
-        resolve("You take out the trash");
-        // callback(); 
-    },500);
-    })
-}
+// function takeOutTrash(){
+//     return new Promise((resolve,reject)=>{
+//          setTimeout(()=>{
+//         resolve("You take out the trash");
+//         // callback(); 
+//     },500);
+//     })
+// }
 
 // walkDog(()=>{
 //     cleanKitchen(()=>{
@@ -2017,23 +2017,23 @@ function takeOutTrash(){
 //JSON.stringify() = Converts a JavaScript object or value to a JSON string
 //JSON.parse() = Parses a JSON string and converts it into a JavaScript object or value
 
-const names=["Mouli","Roni","Ravi","Madhu"];
+// const names=["Mouli","Roni","Ravi","Madhu"];
 
-const jsonString=JSON.stringify(names);
+// const jsonString=JSON.stringify(names);
 
-console.log(names)
+// console.log(names)
 
-console.log(jsonString);
+// console.log(jsonString);
 
-const person={
-    name:"Mouli",
-    age:18,
-    isEmployed:true,
-    hobbies:["reading","gaming","hiking"]
-}
+// const person={
+//     name:"Mouli",
+//     age:18,
+//     isEmployed:true,
+//     hobbies:["reading","gaming","hiking"]
+// }
 
-const personJsonString=JSON.stringify(person);
+// const personJsonString=JSON.stringify(person);
 
-console.log(person);
-console.log(personJsonString);
+// console.log(person);
+// console.log(personJsonString);
 

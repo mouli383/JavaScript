@@ -1,0 +1,24 @@
+.card-block{
+    height:20px;
+    border:2px solid black;
+    padding:25px;
+    font-weight:bold;
+    font-size:0.8rem;
+}
+
+body{
+    background:#333;
+    color:#fff;
+}
+
+.card-block1{
+    background-color:blue;
+}
+
+.card-block2{
+    background-color:green;
+}
+
+.card-block3{
+    background-color:red;
+}

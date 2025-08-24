@@ -29,7 +29,7 @@ function showSlide(index){
 }
 
 function prevSlide(){
-    clearInterval(intervalId);
+    // clearInterval(intervalId);
     slideIndex--;
     showSlide(slideIndex);
 }
